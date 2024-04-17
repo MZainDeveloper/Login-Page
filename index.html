@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center">
+        <h1>LogIn</h1>
+        <form method="post">
+            <div class="txt-field">
+                <input type="text" name="fname" id="fname" autocomplete="off">
+                <span></span>
+                <label for="username">Username</label>
+            </div>
+            <div class="txt-field">
+                <input type="password" name="pwd" id="pwd">
+                <span></span>
+                <label for="password">Password</label>
+            </div>
+            <div class="pass"><a href="#">Forgot Password</a></div>
+            <input type="submit" value="LogIn"  onclick="func()">
+            <div class="signup_lnk">
+                Don't have an account?<a href="#">SignUp</a>
+            </div>
+        </form>
+
+    </div>
+    <script>
+        function func(){
+            var email = document.getElementById("fname").value;
+            var pass = document.getElementById("pwd").value;
+            if (email == 'zain@gmail.com' && pass == 123456){
+                alert("Success full")
+            }
+            else{
+                alert("Wrong Username & Passwprd")
+            }
+        }
+        
+    </script>
+</body>
+</html>
