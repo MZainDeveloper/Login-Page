@@ -21,7 +21,7 @@
                 <label for="password">Password</label>
             </div>
             <div class="pass"><a href="#">Forgot Password</a></div>
-            <input type="submit" value="LogIn"  onclick="func()">
+            <input type="submit" value="LogIn"  onclick= "redirectToSamePage(); return false;">
             <div class="signup_lnk">
                 Don't have an account?<a href="#">SignUp</a>
             </div>
@@ -29,14 +29,18 @@
 
     </div>
     <script>
-        function func(){
+        function redirectToSamePage() {
             var email = document.getElementById("fname").value;
             var pass = document.getElementById("pwd").value;
             if (email == 'zain@gmail.com' && pass == 123456){
-                alert("Success full")
+                alert("Successfuly logIn")
+                window.location.href = window.location.href;
+                // Redirecting to the same page
             }
             else{
-                alert("Wrong Username & Passwprd")
+                alert("Wrong Username & Password")
+                window.location.href = window.location.href;
+                // Redirecting to the same page
             }
         }
         
