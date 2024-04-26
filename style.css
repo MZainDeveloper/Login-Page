@@ -11,6 +11,14 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+#main{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width:550px;
+    height: 400px;
+    background: rgb(65, 65, 139);
+}
 .center {
     position: absolute;
     top: 50%;
